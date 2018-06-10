@@ -21,10 +21,14 @@
 #include "MainWindow.h"
 #include "Game.h"
 
+#include "Vec2.h"
+
 Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
-	gfx( wnd )
+	gfx( wnd ),
+	board(boardX, boardY, boardWidth, boardHeight, nTiles, tileHeight, tileWidth, gfx, boardR, boardG, boardB),
+	mt(rd())
 {
 }
 
@@ -38,6 +42,11 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	board.Update();
+	//Update Snek
+	//Update Food
+	//update obstacle
+
 }
 
 void Game::ComposeFrame()

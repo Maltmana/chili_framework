@@ -23,6 +23,11 @@
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "Graphics.h"
+#include "Board.h"
+#include "Snek.h"
+#include "Obstacle.h"
+#include "Food.h"
+#include <random>
 
 class Game
 {
@@ -42,5 +47,26 @@ private:
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
+	int boardX = 150;
+	int boardY = 50;
+	int boardHeight = 500;
+	int boardWidth = 500;
+	int nTiles = 100;
+	int tileHeight = 5;
+	int tileWidth = 5;
+	int boardR = 50;
+	int boardG = 0;
+	int boardB = 0;
+	int distColorRandMin = 10;
+	int distColorRandMax = 20;
+
+	//INIT FIRST ORDER
+	std::random_device rd;
+	std::mt19937 mt;
+//	std::uniform_real_distribution<int> distColor;
+
+	//INIT SECOND ORDER
+	Board board;
+
 	/********************************/
 };
