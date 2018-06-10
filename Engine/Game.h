@@ -47,16 +47,18 @@ private:
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
-	int boardX = 150;
+	int boardX = 50;
 	int boardY = 50;
 	int boardHeight = 500;
-	int boardWidth = 500;
-	int nTiles = 100;
-	int tileHeight = 5;
-	int tileWidth = 5;
+	int boardWidth = 700;
+	int nBoardCol = 35;
+	int nBoardRow = 25;
+	int tileHeight = 20;
+	int tileWidth = 20;
 	int boardR = 50;
 	int boardG = 0;
 	int boardB = 0;
+	int checkerContrast = 100;
 	int distColorRandMin = 10;
 	int distColorRandMax = 20;
 

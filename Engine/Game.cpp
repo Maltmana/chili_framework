@@ -27,7 +27,7 @@ Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
 	gfx( wnd ),
-	board(boardX, boardY, boardWidth, boardHeight, nTiles, tileHeight, tileWidth, gfx, boardR, boardG, boardB),
+	board(boardX, boardY, boardWidth, boardHeight, nBoardRow, nBoardCol, tileWidth, tileHeight, gfx, boardR, boardG, boardB, checkerContrast),
 	mt(rd())
 {
 }
